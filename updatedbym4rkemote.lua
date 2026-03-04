@@ -479,6 +479,8 @@ AddEmote("Arm Wave", 5915773155)
 AddEmote("Head Banging", 5915779725)
 AddEmote("Face Calisthenics", 9830731012)
 AddEmote("dancing with your eyes closed", 129637389787927)
+AddEmote("BLACKPINK Lisa money", 86328904597296)
+AddEmote("BURBERRY LOLA ATTITUDE BLOOM", 133704027308074)
 
 --finished loading
 Loading:Destroy()
