@@ -37,6 +37,7 @@ local function AddCustomEmote(name: string, id: IntValue, price: IntValue?)
 end
 
 -- pre-register custom emotes here so they are always available
+AddCustomEmote("hakari dance V2", 77666131363559)
 AddCustomEmote("Tommy Archer", 13823339506)
 
 local function AddEmote(name: string, id: IntValue, price: IntValue?)
@@ -500,6 +501,7 @@ for i, Emote in pairs(totalEmotes) do
 end
 
 -- define any custom emotes here so they stay separate
+AddCustomEmote("hakari dance V2", 77666131363559)
 AddCustomEmote("Tommy Archer", 13823339506)
 
 -- append any custom emotes defined via AddCustomEmote so they don't get overwritten
