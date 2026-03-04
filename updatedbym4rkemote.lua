@@ -430,6 +430,7 @@ end
 AddEmote("Arm Wave", 5915773155)
 AddEmote("Head Banging", 5915779725)
 AddEmote("Face Calisthenics", 9830731012)
+AddEmote("dancing with your eyes closed", 129637389787927)
 
 --finished loading
 Loading:Destroy()
