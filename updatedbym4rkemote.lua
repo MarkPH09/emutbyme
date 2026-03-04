@@ -17,6 +17,25 @@ local StarterGui = game:GetService("StarterGui")
 local UserInputService = game:GetService("UserInputService")
 
 local Emotes = {}
+
+-- separate list for custom emotes; using this avoids overwriting
+-- the main catalog/unreleased population so they stay intact.
+local CustomEmotes = {}
+local function AddCustomEmote(name: string, id: IntValue, price: IntValue?)
+	if not (name and id) then
+		return
+	end
+
+	table.insert(CustomEmotes, {
+		["name"] = name,
+		["id"] = id,
+		["icon"] = "rbxthumb://type=Asset&id=".. id .."&w=150&h=150",
+		["price"] = price or 0,
+		["index"] = #CustomEmotes + 1,
+		["sort"] = {}
+	})
+end
+
 local function AddEmote(name: string, id: IntValue, price: IntValue?)
 	if not (name and id) then
 		return
@@ -31,6 +50,9 @@ local function AddEmote(name: string, id: IntValue, price: IntValue?)
 		["sort"] = {}
 	})
 end
+
+-- after loading all regular emotes below, the script will merge custom ones
+
 local CurrentSort = "newestfirst"
 
 local FavoriteOff = "rbxassetid://10651060677"
@@ -472,6 +494,14 @@ end
 
 for i, Emote in pairs(totalEmotes) do
 	AddEmote(Emote.Name, Emote.Id, Emote.Price)
+end
+
+-- define any custom emotes here so they stay separate
+AddCustomEmote("Tommy Archer", 13823339506)
+
+-- append any custom emotes defined via AddCustomEmote so they don't get overwritten
+for i,Emote in pairs(CustomEmotes) do
+	AddEmote(Emote.name, Emote.id, Emote.price)
 end
 
 --unreleased emotes
