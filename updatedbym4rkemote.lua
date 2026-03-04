@@ -36,6 +36,9 @@ local function AddCustomEmote(name: string, id: IntValue, price: IntValue?)
 	})
 end
 
+-- pre-register custom emotes here so they are always available
+AddCustomEmote("Tommy Archer", 13823339506)
+
 local function AddEmote(name: string, id: IntValue, price: IntValue?)
 	if not (name and id) then
 		return
