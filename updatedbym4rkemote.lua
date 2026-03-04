@@ -516,7 +516,6 @@ AddEmote("BLACKPINK Lisa money", 86328904597296)
 AddEmote("BURBERRY LOLA ATTITUDE BLOOM", 133704027308074)
 AddEmote("TWICE ABCD by Nayeon", 18933761755)
 AddEmote("Beauty Touchdown", 16303091119)
-AddEmote("Tommy Archer", 16303091119)
 
 --finished loading
 Loading:Destroy()
