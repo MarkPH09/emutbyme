@@ -53,23 +53,30 @@ BackFrame.BackgroundTransparency = 1
 BackFrame.BorderSizePixel = 0
 BackFrame.Parent = ScreenGui
 
+local WatermarkFrame = Instance.new("Frame")
+WatermarkFrame.Name = "WatermarkFrame"
+WatermarkFrame.BackgroundTransparency = 0.2
+WatermarkFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+WatermarkFrame.AnchorPoint = Vector2.new(0.5, 0)
+WatermarkFrame.Position = UDim2.new(0.5, 0, 1.05, 0)
+WatermarkFrame.Size = UDim2.new(0.25, 0, 0.08, 0)
+WatermarkFrame.BorderSizePixel = 0
+WatermarkFrame.ZIndex = 2
+WatermarkFrame.Parent = BackFrame
+local WatermarkFrameCorner = Instance.new("UICorner")
+WatermarkFrameCorner.CornerRadius = UDim.new(0, 12)
+WatermarkFrameCorner.Parent = WatermarkFrame
+
 local Watermark = Instance.new("TextLabel")
 Watermark.Name = "Watermark"
 Watermark.Text = "updated by m4rkontop baby"
 Watermark.TextScaled = true
 Watermark.TextColor3 = Color3.new(1, 1, 1)
-Watermark.BackgroundTransparency = 0.2
-Watermark.BackgroundColor3 = Color3.new(0, 0, 0)
+Watermark.BackgroundTransparency = 1
 Watermark.TextTransparency = 0
-Watermark.AnchorPoint = Vector2.new(0.5, 0)
-Watermark.Position = UDim2.new(0.5, 0, 1.05, 0)
-Watermark.Size = UDim2.new(0.25, 0, 0.08, 0)
+Watermark.Size = UDim2.new(1, 0, 1, 0)
 Watermark.BorderSizePixel = 0
-Watermark.ZIndex = 2
-Watermark.Parent = BackFrame
-local WatermarkCorner = Instance.new("UICorner")
-WatermarkCorner.CornerRadius = UDim.new(0, 12)
-WatermarkCorner.Parent = Watermark
+Watermark.Parent = WatermarkFrame
 local WatermarkPadding = Instance.new("UIPadding")
 WatermarkPadding.PaddingLeft = UDim.new(0.1, 0)
 WatermarkPadding.PaddingRight = UDim.new(0.1, 0)
@@ -440,6 +447,7 @@ end
 AddEmote("Arm Wave", 5915773155)
 AddEmote("Head Banging", 5915779725)
 AddEmote("Face Calisthenics", 9830731012)
+AddEmote("dancing with your eyes closed", 129637389787927)
 
 --finished loading
 Loading:Destroy()
