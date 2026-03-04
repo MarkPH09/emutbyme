@@ -203,6 +203,37 @@ end)
 Corner:Clone().Parent = SortButton
 SortButton.Parent = BackFrame
 
+local WatermarkTopFrame = Instance.new("Frame")
+WatermarkTopFrame.Name = "WatermarkTopFrame"
+WatermarkTopFrame.BackgroundTransparency = 0.2
+WatermarkTopFrame.BackgroundColor3 = Color3.new(0, 0, 0)
+WatermarkTopFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+WatermarkTopFrame.Position = UDim2.new(0.75, 0, -0.075, 0)
+WatermarkTopFrame.Size = UDim2.new(0.15, 0, 0.1, 0)
+WatermarkTopFrame.BorderSizePixel = 0
+WatermarkTopFrame.ZIndex = 2
+WatermarkTopFrame.Parent = BackFrame
+local WatermarkTopFrameCorner = Instance.new("UICorner")
+WatermarkTopFrameCorner.CornerRadius = UDim.new(0, 12)
+WatermarkTopFrameCorner.Parent = WatermarkTopFrame
+
+local WatermarkTop = Instance.new("TextLabel")
+WatermarkTop.Name = "WatermarkTop"
+WatermarkTop.Text = "1ZG emotes"
+WatermarkTop.TextScaled = true
+WatermarkTop.TextColor3 = Color3.new(1, 1, 1)
+WatermarkTop.BackgroundTransparency = 1
+WatermarkTop.TextTransparency = 0
+WatermarkTop.Size = UDim2.new(1, 0, 1, 0)
+WatermarkTop.BorderSizePixel = 0
+WatermarkTop.Parent = WatermarkTopFrame
+local WatermarkTopPadding = Instance.new("UIPadding")
+WatermarkTopPadding.PaddingLeft = UDim.new(0.1, 0)
+WatermarkTopPadding.PaddingRight = UDim.new(0.1, 0)
+WatermarkTopPadding.PaddingTop = UDim.new(0.05, 0)
+WatermarkTopPadding.PaddingBottom = UDim.new(0.05, 0)
+WatermarkTopPadding.Parent = WatermarkTop
+
 local CloseButton = Instance.new("TextButton")
 CloseButton.BorderSizePixel = 0
 CloseButton.AnchorPoint = Vector2.new(0.5, 0.5)
