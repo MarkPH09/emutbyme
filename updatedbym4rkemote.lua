@@ -39,6 +39,20 @@ end
 -- pre-register custom emotes here so they are always available
 AddCustomEmote("hakari dance V2", 77666131363559)
 AddCustomEmote("Tommy Archer", 13823339506)
+AddCustomEmote("Arm Twist", 9710992846)
+AddCustomEmote("BURBERRY-LOLA-ATTITUDE-NIMBUS", 10147924028)
+AddCustomEmote("elton john-heart shuffle", 70866063275153)
+AddCustomEmote("Floor Rock Freeze", 10214411646)
+AddCustomEmote("Mean-Mug-Tommy-Hilfiger", 10214415687)
+AddCustomEmote("Nicki-Minaj-Boom-Boom-Boom", 15571538346)
+AddCustomEmote("Paris hilton-Checking my angles", 75837489916720)
+AddCustomEmote("Tommy K-Pop Mic Drop", 14024722653)
+AddCustomEmote("Team USA Breaking Emote", 18526338976)
+AddCustomEmote("TWICE Feel Special", 14900153406)
+AddCustomEmote("Uprise-Tommy-Hilfiger", 10275057230)
+
+
+
 
 local function AddEmote(name: string, id: IntValue, price: IntValue?)
 	if not (name and id) then
@@ -499,10 +513,6 @@ end
 for i, Emote in pairs(totalEmotes) do
 	AddEmote(Emote.Name, Emote.Id, Emote.Price)
 end
-
--- define any custom emotes here so they stay separate
-AddCustomEmote("hakari dance V2", 77666131363559)
-AddCustomEmote("Tommy Archer", 13823339506)
 
 -- append any custom emotes defined via AddCustomEmote so they don't get overwritten
 for i,Emote in pairs(CustomEmotes) do
