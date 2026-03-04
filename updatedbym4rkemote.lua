@@ -60,8 +60,8 @@ Watermark.TextScaled = true
 Watermark.TextColor3 = Color3.new(1, 1, 1)
 Watermark.BackgroundTransparency = 1
 Watermark.TextTransparency = 0.25
-Watermark.AnchorPoint = Vector2.new(1, 1)
-Watermark.Position = UDim2.new(1, -20, 1, 0)
+Watermark.AnchorPoint = Vector2.new(0.5, 0)
+Watermark.Position = UDim2.new(0.5, 0, 1.05, 0)
 Watermark.Size = UDim2.new(0.18, 0, 0.05, 0)
 Watermark.BorderSizePixel = 0
 Watermark.ZIndex = 2
@@ -430,7 +430,6 @@ end
 AddEmote("Arm Wave", 5915773155)
 AddEmote("Head Banging", 5915779725)
 AddEmote("Face Calisthenics", 9830731012)
-AddEmote("dancing with your eyes closed", 129637389787927)
 
 --finished loading
 Loading:Destroy()
