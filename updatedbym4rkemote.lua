@@ -51,6 +51,14 @@ AddCustomEmote("Team USA Breaking Emote", 18526338976)
 AddCustomEmote("TWICE Feel Special", 14900153406)
 AddCustomEmote("Uprise-Tommy-Hilfiger", 10275057230)
 AddCustomEmote("Rise Above The Chainsmokers", 13071993910)
+AddCustomEmote("HUGO Let's Drive", 17360720445)
+AddCustomEmote("Frosty-Flair-Tommy-Hilfiger", 10214406616)
+AddCustomEmote("Bone Chillin Pop'", 15123050663)
+AddCustomEmote("hip sway'", 80963950541052)
+AddCustomEmote("Raiden punching armstrong loop", 115203580644128)
+AddCustomEmote("Chinese-Dance-Da-Koto-Nai-BEST", 104539498095025)
+AddCustomEmote("Headless dribbling", 115203580644128)
+AddCustomEmote("BASKETBAL DRIBBLING", 107282826166809)
 
 
 
