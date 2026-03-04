@@ -50,6 +50,7 @@ AddCustomEmote("Tommy K-Pop Mic Drop", 14024722653)
 AddCustomEmote("Team USA Breaking Emote", 18526338976)
 AddCustomEmote("TWICE Feel Special", 14900153406)
 AddCustomEmote("Uprise-Tommy-Hilfiger", 10275057230)
+AddCustomEmote("Rise Above The Chainsmokers", 13071993910)
 
 
 
