@@ -59,6 +59,7 @@ AddCustomEmote("Raiden punching armstrong loop", 115203580644128)
 AddCustomEmote("Chinese-Dance-Da-Koto-Nai-BEST", 104539498095025)
 AddCustomEmote("Headless dribbling", 115203580644128)
 AddCustomEmote("BASKETBAL DRIBBLING", 107282826166809)
+AddCustomEmote("Spongebob Imagination", 18443268949)
 
 
 
