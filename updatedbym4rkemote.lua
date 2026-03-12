@@ -63,6 +63,7 @@ AddCustomEmote("Spongebob Imagination", 18443268949)
 AddCustomEmote("Relaxed Sit", 99568437064777)
 AddCustomEmote("sit", 112866416808102)
 AddCustomEmote("kawai sit", 113578589119917)
+AddCustomEmote("TWICE I GOT YOU PART 1", 16215060261)
 
 
 
